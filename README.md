@@ -40,3 +40,29 @@ O processo de construção do dataset pode ser dividido em duas etapas: (A) sele
 08. **Trocar caractere por semelhança:** por exemplo, o termo do Google para goog1e ou go0gle (substituindo a letra o por, respectivamente, um número 0).
 09. **Trocar vogal:** ex. o termo google para gaagle.
 10. **Simulação de TLD:** por exemplo, o termo google.com para google-com.tk.
+
+É importante salientar que, durante o processo de aplicação aleatória dos comportamentos homográficos, buscou-se respeitar a popularidade de cada comportamentos, descritos por Teixeira em "Uma avaliação de comportamentos homográficos em ataques de phishing direcionados que exploram a suscetibilidade pela fidedignidade e sazonalidade". Além disso, optou-se por não permitir a repetição de termos deturpado na base, logo, todos os termos repetidos foram descartados durante o processo de construção do dataset.
+
+Além do já exposto, algumas peculiaridades para aplicação das manipulações merecem destaque. A primeira delas é a utilização de quatro variedades de padrões de teclado para aplicação nas características 01 e 06. Para estas, foram selecionados os padrões "QWERTY", "AZERTY", "DVORAK" e "COLEMAK", garantindo que os termos serão manipulados em padrões globais. Já a particularidade seguinte foi aplicada a segunda (02) característica de manipulação. A opção gramatical para essa manipulação foi a aplicação das regras impostas pela língua portuguesa, a exemplo da substituição da letra final por "ns", para substantivos terminados em "m".
+
+# Dataset
+
+De posse das marcas participantes e das proporções de cada comportamento de manipulação dos termos, executamos a construção da base de dados. Ao fim da construção do banco de dados, obtivemos um total de **33.077 termos homográficos**, distribuídas entre as 30 marcas-alvo, conforme a tabela a seguir.
+
+| # | Marca | Homográficos | # | Marca | Homográficos |
+| ----- | ----- | ----- | ----- | ----- | ----- |
+| 01 | amazon | 1058 | 16 | tsb | 966 |
+| 02 | runescape | 1177 | 17 | yahoo | 1014 |
+| 03 | google | 1041 | 18 | magazine luiza | 1325 |
+| 04 | facebook | 1112 | 19 | adobe | 1032 | 
+| 05 | paypal | 1049 | 20 | dhl | 962 |
+| 06 | microsoft | 1152 | 21 | americanas | 1215 |
+| 07 | halifax | 1090 | 22 | caixa econômica | 1344 |
+| 08 | apple | 1020 | 23 |steam | 1036 |
+| 09 | itau | 998 | 24 | dropbox | 1078 |
+| 10 | lloyds | 1045 | 25 | bradesco | 1136 |
+| 11 | rakuten | 1093 | 26 | banco do brasil | 1308 |
+| 12 | bank of america | 1313 | 27 | santander | 1174 |
+| 13 | wellsfargo | 1202 | 28 | alibaba | 1085 |
+| 14 | ebay | 1003 | 29 | hsbc | 991 |
+| 15 | netflix | 1090 | 30 | aol | 968 |
